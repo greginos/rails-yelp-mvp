@@ -1,0 +1,7 @@
+
+<h2>Reviews</h2>
+  <ul>
+    <% @reviews.each do |review| %>
+      <li> <%= review.content %>, <%= (review.rating).times{puts "*"} %></li>
+    <% end %>
+  </ul>
